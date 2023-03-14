@@ -1,6 +1,6 @@
 FROM node:alpine AS development
 ENV NODE_ENV development
-WORKDIR /app
+WORKDIR /apps
 COPY ./package.json /app
 RUN npm install
 COPY . .
